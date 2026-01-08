@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gen-e2 Data Platform Project (SATS)
+
+## Project Overview
+
+This project establishes a robust Data Platform for SATS, leveraging Azure Cloud infrastructure and Gen-e2 principles. It is designed to handle both Batch and Streaming data pipelines, integrating with key enterprise systems like SAP and D365.
+
+## Technology Stack
+
+- **Cloud Provider**: Azure
+- **Infrastructure as Code**: Terraform
+- **Programming Language**: Python
+- **CI/CD**: GitHub Actions
+- **Containerization**: Docker
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Python 3.9+
+- Azure CLI
+- Terraform
+- Docker
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/Palo-IT-GitHub-Demos/sats.git
+   cd sats
+   ```
 
-## Learn More
+2. **Install Dependencies**:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   bash scripts/setup.sh
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Infrastucture deployment**:
+   Refer to `infra/docs/README.md` for detailed instructions on deploying the Azure resources using Terraform.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Documentation
 
-## Deploy on Vercel
+- **Architecture**: [View Architecture](docs/architecture/)
+- **Features**: [View Features](docs/features/)
+- **Integration**: [View Integration Specs](docs/integration/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
